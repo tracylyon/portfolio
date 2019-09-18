@@ -1,0 +1,95 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tracy Lyon Portfolio</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Acme|Arimo|Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+    <header> 
+				
+		<div id="hero">
+	
+		<h1>Tracy L Lyon</h1>
+		<span> Web Development - Usability - Content Development</span>
+		
+		</div>
+	<!-- nav bar
+		
+			<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+			<nav>
+		
+				<ul>
+
+					<li><a href="index.html">Who I Am</a></li>
+					<li><a href="page1.html">Writing</a></li>
+					<li><a href="page2.html">Creative</a></li>
+					<li><a href="page3.html">Coding </a></li>
+					<li><a href="page4.html">Resume&acute;</a></li>	
+				</ul>
+	
+			<a href="#" class="menu-icon" id="close-icon">X</a>
+			</nav> -->
+	</header>
+	<div id="main">
+	
+		<div id="block1"><p> this is a place </p>
+		
+			</div>
+		
+		<div id="block2">
+				<p> block 2 </p>
+			</div>
+		
+	
+		<div id="block3">
+			<p> block 3 </p>
+			</div>
+	
+		<div id="block4">
+			<p> block 4 </p>
+			
+			</div>
+	
+	</div> <!--closes main body of page-->
+<footer>
+		last updated: <time datetime="2018-12-07">December 7, 2018</time>
+</footer>
+
+</div> <!--closes wrapper-->
+
+<script>
+	// reveal nav
+	document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+    // close nav
+	document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+	let navBar = document.querySelector("nav");
+	let hamIcon = document.querySelector("#ham-icon");
+
+	function displayNav() {
+       navBar.style.display = "block";
+       hamIcon.style.display = "none";
+	 }
+
+	function hideNav() {
+       navBar.style.display = "none";
+       hamIcon.style.display = "block";
+	 }
+
+
+
+</script>
+
+</body>
+</html>
