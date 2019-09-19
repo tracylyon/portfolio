@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tracy Lyon Portfolio</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Acme|Arimo|Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+    <header> 
+				
+		
+	
+		<h1>Tracy Lyon</h1>
+		<span> A working portfolio of my most significant work </span>
+	<!-- nav bar -->
+		
+			<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+			<nav>
+		
+				<ul>
+
+					<li><a href="index.html">Who I Am</a></li>
+					<li><a href="page1.html">Writing</a></li>
+					<li><a href="page2.html">Creative</a></li>
+					<li><a href="page3.html">Coding </a></li>
+					<li><a href="page4.html">Resume&acute;</a></li>	
+				</ul>
+	
+			<a href="#" class="menu-icon" id="close-icon">X</a>
+			</nav>
+	</header>
+	<div id="main">
+		<div id="block1">
+			<h2> Writing </h2>
+			<p>I am currently working on my <a href=" https://cas.vancouver.wsu.edu/professional-writing"> Professional Writing Certificate</a> from WSU Vancouver. With this, I plan to show the world my writing and editing skills, as well as my interest in communications. In order to get the Professional Writing Certificate I have to meet the following requirements.<br> </p>
+			<h3>Professional Writing Certificate Courses</h3>
+			<ul>
+				<li>Anthropology 350 - Speech, Thought, and Culture</li>
+				<li>English 301 - Writing and Rhetorical Conventions </li>
+				<li>English 355 - Multimedia Authoring: Exploring New Rhetorics</li>
+				<li>English 402 - Technical and Professional Writing </li>
+				<li>English 498 - Internship </li>
+			</ul>
+			
+		</div>
+	
+		<div id="block2">
+			<h2>Technical Writing</h2>
+			<p>As part of my degree program I learned about writing about technology in such a way as to make stereo instructions (or printer manuals) more readable and useful.</p>
+				<div class="imagebox">
+					<a href="document_redesign_memo.pdf">
+					<img src="img/memo.png" alt="pdf of memo"></a>
+				</div>
+			<p> To view a pdf of the entire document, click on the image above.</p>
+		
+		</div>
+	
+		<div id="block3">
+			<h2>Creative Writing Projects</h2>
+			<p> I am also very interested in creative writing, and have been exploring html as a medium for this process, using web design to create narrative stories such as my remediation of an old tale, "The Fisherman and His Wife."</p>
+				<div class="imagebox">
+					<a href="img/Remediation.pdf">
+						<img src="img/remediation.png" alt="remediation process"></a>
+						</div>
+				<p> To view the actual website, click <a href="http://dtc-wsuv.org/tlyon18/sequential/">The Fisherman and His Wife</a></p>
+			
+		
+			
+		
+		</div>
+	<div id="block4">
+				<h2>Document Redesign Project</h2>
+				<p> Through the use of color, headings, and various other design techniques, I conceived a more useful document, as described in the memo above.</p>
+				<div class="imagebox">
+					<a href="img/document_redesign_project.pdf">
+						<img src="img/redesign.png" alt="redesign project from English 402"></a>
+					</div>
+			<p>To view the original document prior to my changes, click on</p> 
+			<a href="http://h10032.www1.hp.com/ctg/Manual/c04427274">HP Manual</a>	
+				
+			
+		</div>
+		
+		
+				
+	
+	</div> <!--closes main body of page-->
+<footer>last updated: <time datetime="2018-12-07">December 7, 2018</time></footer>
+
+
+</div> <!--closes wrapper-->
+
+<script>
+	// reveal nav
+	document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+    // close nav
+	document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+	let navBar = document.querySelector("nav");
+	let hamIcon = document.querySelector("#ham-icon");
+
+	function displayNav() {
+       navBar.style.display = "block";
+       hamIcon.style.display = "none";
+	 }
+
+	function hideNav() {
+       navBar.style.display = "none";
+       hamIcon.style.display = "block";
+	 }
+
+
+
+</script>
+
+</body>
+</html>

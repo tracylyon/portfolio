@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tracy Lyon Portfolio</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Acme|Arimo|Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+    <header> 
+				
+		
+	
+		<h1>Tracy Lyon</h1>
+		<span> A working portfolio of my most significant work </span>
+	<!-- nav bar -->
+		
+			<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+			<nav>
+		
+				<ul>
+
+					<li><a href="index.html">Who I Am</a></li>
+					<li><a href="page1.html">Writing</a></li>
+					<li><a href="page2.html">Creative</a></li>
+					<li><a href="page3.html">Coding </a></li>
+					<li><a href="page4.html">Resume&acute;</a></li>	
+				</ul>
+	
+			<a href="#" class="menu-icon" id="close-icon">X</a>
+			</nav>
+	</header>
+	<div id="main">
+		<div id="block1">
+		<h2> Python Programming</h2>
+		<p> In the Fall of 2016 I took an introductory python course, where I learned to create interesting programs, such as the python program that can be used to run a game of Connect Four which was the culminating project for this course. </p><br>
+			<div class="imagebox"> 
+			<img src="img/connect4.png" alt="screenshot of my connect four program running">
+			</div>
+		<div class="imagebox"> 
+			<img src="img/pythoncode.png" alt="screenshot of part of the code for the connect four program">
+			</div>
+		</div>
+	
+		<div id="block2">
+		<h2> Java Programming</h2>
+		<p> I have completed basic programming in Java as well as advanced data structure coursework. Here are some examples of the type of coding I completed in this coursework. I enjoy the challenge of writing code, as well as finding the little errors that can stall out programs. </p><br>
+			<div class="imagebox"> 
+				<img src="img/javaprogram.png" alt="screenshot of Simple Eliza program">
+			</div>
+			<div class="imagebox"> 
+				<img src="img/javafunction.png" alt="screenshot of memoization function">
+			</div>
+		</div>
+	
+		
+	
+	</div> <!--closes main body of page-->
+
+<footer>
+		last updated: <time datetime="2018-12-07">December 7, 2018</time>
+</footer>
+</div> <!--closes wrapper-->
+
+<script>
+	// reveal nav
+	document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+    // close nav
+	document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+	let navBar = document.querySelector("nav");
+	let hamIcon = document.querySelector("#ham-icon");
+
+	function displayNav() {
+       navBar.style.display = "block";
+       hamIcon.style.display = "none";
+	 }
+
+	function hideNav() {
+       navBar.style.display = "none";
+       hamIcon.style.display = "block";
+	 }
+
+
+
+</script>
+
+</body>
+</html>

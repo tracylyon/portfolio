@@ -1,0 +1,324 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+	html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	
+	margin: 0;	
+	padding: 0;	
+	border: 0;	
+	font-size: 100%;	
+	font: inherit;	
+	vertical-align: baseline;}
+	
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	
+	display: block;}
+	
+	body {	
+	line-height: 1.5;
+	}
+	
+	ol, ul {	
+	list-style: none;
+	}
+	
+	blockquote, q {	
+	quotes: none;
+	}
+	
+	blockquote:before, blockquote:after,q:before, q:after {	
+	content: '';	
+	content: none;
+	}
+	
+	table {	
+	border-collapse: collapse;	border-spacing: 0;
+	}	
+	
+	/* end reset*/
+	
+/*	Color scheme "blues"
+
+	#212E5C medium blue
+	#DBB91A yellow orange
+	#EBD767 light yellow
+	#4C588D blue gray
+	#8F95BF pale blue
+	#090F28 blue*/
+	
+	
+	
+	/* default styles*/
+
+
+
+	body {
+		font-family: Merriweather, Book Antiqua, serif;
+		font-size: 16px;
+		background:#4C588D;
+		}
+
+	#wrapper {
+		width: 90%;
+		margin: 2% auto;
+		padding: 2%;
+		}
+
+header {
+		text-align: center;
+		font-size: 1.5em;
+		padding: 2%;
+		margin: 2%;
+		color: #EBD767;
+		background: #212E5C;
+		}
+
+	h1  {
+		font-family: Merriweather Sans, sans-serif;
+		font-size: 2.5em;
+		font-weight: bold;
+		text-align: center;
+		color: white;
+		}
+		
+	h2 {
+		font-family: Merriweather Sans, sans-serif;
+		font-size: 2em;
+		font-weight: bold;
+		color: white;
+		margin: 2%;
+		}
+		
+	h3 {
+		font-family: Merriweather Sans, sans-serif;
+		font-size: 1.5em;
+		font-weight: bold;
+		margin: 5%;
+		color: white;
+		}
+
+	nav {
+		display: none;
+		width: auto;
+		padding: 1%;
+		margin: 1% auto;
+		white-space: nowrap;
+		}
+
+   #ham-icon  {
+    	display: block;
+    	font-size: 2.5em;
+    	width: auto;
+    	margin: 0 auto;
+		}
+
+   #close-icon  {
+    	display: block;
+        border: 1px solid black;
+    	font-size: 1.5em;
+    	width: auto;
+    	margin: 1% auto;
+		}
+
+    a.menu-icon:link, a.menu-icon:visited {
+	   color: black;
+	   text-decoration: none;
+		}
+
+    a.menu-icon:hover, a.menu-icon:focus {
+       color: gray;
+		}
+
+	nav ul {
+		border: 1px solid gray;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1%;
+		}
+		
+	nav li {
+		display: block;
+		border: 1px solid black;
+		}
+
+	
+	nav li a {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		padding:0%;
+		border: 1px solid black;
+		}
+	
+	
+	nav li a:link, nav li a:visited  {
+		color: #000;
+		background: #DBB91A;
+		border: 1px solid black;
+		}
+	
+	nav li a:hover, nav li a:focus {
+		color: #000;
+		background: #212E5C;
+		border: 1px solid black;
+		}
+		
+#introduction{
+		display: block;
+		padding: 2%;
+		margin: 2%;
+		background: #8F95BF;
+
+		}	
+		
+#imagebox {
+		display: block;
+		padding: 2%;
+		margin: auto;
+		}
+	
+#imagebox img {
+		width: 100%;
+		}
+
+#education ul{
+		list-style-type: square;
+		display: block;
+		padding: 2%;
+		margin: 4%;
+		background: #8F95BF;
+		}
+		
+#work ul{
+		list-style-type: square;
+		display: block;
+		padding: 2%;
+		margin: 2%;
+		background: #8F95BF;
+		}
+		
+	/* tablet styles */
+	@media only screen and (min-width: 500px) and (max-width: 700px) {
+	
+#wrapper  {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"nav nav"
+		"header header"
+		"image image"
+		"intro intro"
+		"work work"
+		"education education";
+		
+		padding: 5%;
+		width:90%;
+		}
+		
+		nav{
+		grid area: nav;
+		
+	}
+		nav ul {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		}	
+
+	  	nav {
+			display: block !important;
+		}
+
+		#ham-icon  {
+	    	display: none !important;
+	    }
+
+	    #close-icon  {
+    		display: none;
+          }
+	
+	#imagebox {
+		grid-area: image;
+		padding: 2%;
+		margin: auto;
+		}
+
+	#introduction{
+		grid-area: intro;
+		padding: 2%;
+		margin: auto;
+		}
+
+	#education ul{
+		grid-area: education;
+		padding: 4%;
+		margin: 2%;
+	}
+	
+	#work ul{
+		grid-area: work;
+		list-style-type: square;
+		padding: 4%;
+		margin: 2%;
+		}
+	
+	/* desktop styles */
+	@media only screen and (min-width: 701px) {
+	
+		#wrapper  {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-areas: 
+			"nav nav"
+			"header header"
+			"intro image"
+			"education education"
+			"work work"
+			"footer footer";
+			padding: 5%;
+			width:90%;
+			max-width: 1000px;
+			
+			}
+
+				
+		 nav ul {
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			}
+
+		nav {
+			display: block !important;
+			}	
+
+	    #ham-icon  {
+	    	display: none !important;
+	    }
+
+	    #close-icon  {
+    		display: none;
+          }
+		#introduction{
+			grid-area: intro;
+			padding: 2%;
+			margin: auto;
+		
+					}
+		#imagebox {
+			grid-area: image;
+			padding: 2%;
+			margin: auto;
+			margin: auto;
+		
+					}
+	
+
+	#education ul{
+		
+		grid-area: education;
+		padding: 4%;
+		margin: 2%;
+	}
+	#work ul{
+		list-style-type: square;
+		display: block;
+		padding: 4%;
+		margin: 2%;
+	}
+	
+	
+	}

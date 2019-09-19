@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tracy Lyon Portfolio</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Acme|Arimo|Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <header> 
+				
+		
+	
+		<h1>Tracy Lyon</h1>
+		<span> A working portfolio of my most significant work </span>
+	<!-- nav bar -->
+		
+			<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+			<nav>
+		
+				<ul>
+
+					<li><a href="index.html">Who I Am</a></li>
+					<li><a href="page1.html">Writing</a></li>
+					<li><a href="page2.html">Creative</a></li>
+					<li><a href="page3.html">Coding </a></li>
+					<li><a href="page4.html">Resume&acute;</a></li>	
+				</ul>
+	
+			<a href="#" class="menu-icon" id="close-icon">X</a>
+			</nav>
+	</header>
+	<div id="main">
+		<div id="block1">
+			<h2> Creative Work </h2>
+			<p>As part of my Digital Technology and Culture coursework, I have taken several classes which have given me the opportunity to express my creativity. For example, in Multimedia Authoring I created a website for the poem "Thirteen Ways of Looking at a Blackbird" by Wallace Stevens. I used examples of my own photography to illustrate the poem and used html and CSS code to style the poem.</p><br> <span>Click on the image below to view the full website.</span><br>
+					<div class="imagebox">
+						<a href="http://dtc-wsuv.org/tlyon18/blackbird/"> <img src="img/blackbirds.png" alt="screenshot of blackbird webpage"> </a>
+					</div>
+			</div>
+	
+		<div id="block2">
+			<h2> Other Projects </h2>
+			<p> In the course Language, Texts, and Technology, I used the poem "Song of Hiawatha" by Henry Wadsworth Longfellow to show how objects can be remediated when their content is moved from one type of media to another. </p><br><span>Click on the image below to view the full website.</span><br>
+					<div class="imagebox">
+						<a href="http://dtc-wsuv.org/tlyon18/hiawatha/"><img src="img/hiawatha.png" alt="screenshot of hiawatha webpage">  </a>
+					</div>
+			</div>
+			
+		<div id="block3">
+			<h2>Animated Infographic</h2>
+			<p> In the course Tools and Methods for Digital Technology, I learned to use various programs to create meaningful works such as the video infographic I created about service animals.</p><br>
+			
+				<div class="imagebox">
+					<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/274999486" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+						<p><a href="https://vimeo.com/274999486">Understanding Service Animals</a> from <a href="https://vimeo.com/user85475050">Tracy Lyon</a> on <a href="https://vimeo.com">Vimeo</a>.</p> 
+				</div>
+			</div>
+			
+	
+		<div id="block4">
+			<h2>Recipe Project</h2>
+			<p> One of my passions is cooking, creating and adapting recipes, so when I had the requirement to create a responsive design website of a recipe I was pretty excited. I later went back and added microdata to the website based on what I learned about schema.org through my Information Structures course. Feel free to try resizing the browser to see how the recipe layout changes at different widths of screens. </p> <br>
+			<span>Click on the image below to view the full website.</span><br>
+				<div class="imagebox">
+					<a href="http://dtc-wsuv.org/tlyon18/recipe/"> <img src="img/recipe.png" alt="screenshot of recipe webpage"> </a>
+				</div>
+			
+			
+		</div>
+	
+	
+	</div> <!--closes main body of page-->
+<footer>
+		last updated: <time datetime="2018-12-07">December 7, 2018</time>
+</footer>
+
+</div> <!--closes wrapper-->
+
+<script>
+	// reveal nav
+	document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+    // close nav
+	document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+	let navBar = document.querySelector("nav");
+	let hamIcon = document.querySelector("#ham-icon");
+
+	function displayNav() {
+       navBar.style.display = "block";
+       hamIcon.style.display = "none";
+	 }
+
+	function hideNav() {
+       navBar.style.display = "none";
+       hamIcon.style.display = "block";
+	 }
+
+
+
+</script>
+
+</body>
+</html>

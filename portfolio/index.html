@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tracy Lyon Portfolio</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Acme|Arimo|Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+    <header> 
+
+		<div id="hero">
+		<h1 class="h1text">
+		Tracy L Lyon</h1>
+
+		<div id="tagline"> Web Development - Usability - Content Development</div>
+			</div>
+		</div>
+	<!-- nav bar -->
+		
+			<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+			<nav>
+		
+				<ul>
+
+					<li><a href="index.html">Who I Am</a></li>
+					<li><a href="page1.html">Writing</a></li>
+					<li><a href="page2.html">Creative</a></li>
+					<li><a href="page3.html">Coding </a></li>
+					<li><a href="page4.html">Resume&acute;</a></li>	
+				</ul>
+	
+			<a href="#" class="menu-icon" id="close-icon">X</a>
+			</nav>
+	</header>
+	<div id="main">
+	<!--	<div id="block1">
+		<h2> Who am I? </h2>
+		<p>My name is Tracy Lyon. I will soon be graduating with my Bachelors of Arts degree from Washington State University, Vancouver with a major in Digital Technology and Culture and a minor in Computer Science, as well as the Professional Writing Certificate. I have learned much about programming in various languages and environments, as well as how to best integrate technology and culture graphically through computer science and how to write professionally. With the coursework from WSU as well as my prior life and work experience, I feel confident that I can step into a new position and begin working with the cutting-edge technology produced at your company.</p> 
+		</div>
+		
+	<div id="block2">
+		<div class="imagebox">
+			<img src="img/TracyLLyonatWSUV.png" alt="my picture">
+			</div>
+	</div>
+		
+	
+		<div id="block3">
+			<h2>My Education</h2>
+			<ul>
+				<li> WSU Vancouver: DTC Major, CS Minor </li>
+				<li> City University of Seattle: Education Major</li>
+				<li> Solano Community College: Liberal Studies </li>
+			</ul>
+		</div>
+	
+		<div id="block4">
+			<h2>Work/Volunteer </h2>
+			<ul>
+				<li> Alorica advanced technical support for AT&T Spokane, WA 10/14-08/15</li>
+				<li> Crossroads Church preschool lead teacher, Vancouver, WA 9/16 to present </li>
+				<li> College Access Program volunteer, Vancouver, WA 9/18 to present </li>
+		
+			</ul>  
+		</div>
+	-->
+	
+	</div> <!--closes main body of page-->
+<footer>
+		last updated: <p>Date/Time: <span id="datetime"></span></p>
+</footer>
+
+</div> <!--closes wrapper-->
+
+<script>
+	// reveal nav
+	document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+    // close nav
+	document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+	let navBar = document.querySelector("nav");
+	let hamIcon = document.querySelector("#ham-icon");
+
+	function displayNav() {
+       navBar.style.display = "block";
+       hamIcon.style.display = "none";
+	 }
+
+	function hideNav() {
+       navBar.style.display = "none";
+       hamIcon.style.display = "block";
+	 }
+
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+
+
+
+</script>
+
+</body>
+</html>

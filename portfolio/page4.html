@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tracy Lyon Portfolio</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Acme|Arimo|Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+    <header> 
+				
+		
+	
+		<h1>Tracy Lyon</h1>
+		<span> A working portfolio of my most significant work </span>
+	<!-- nav bar -->
+		
+			<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+			<nav>
+		
+				<ul>
+
+					<li><a href="index.html">Who I Am</a></li>
+					<li><a href="page1.html">Writing</a></li>
+					<li><a href="page2.html">Creative</a></li>
+					<li><a href="page3.html">Coding </a></li>
+					<li><a href="page4.html">Resume&acute;</a></li>	
+				</ul>
+	
+			<a href="#" class="menu-icon" id="close-icon">X</a>
+			</nav>
+	</header>
+	<div id="main">
+		<div id="block1">
+			<h2> Who am I? </h2>
+			<p> My name is Tracy Lyon. I think my accomplishments will show that I can become a valuable member of your team! To view my full resume, click on the image below.<br> </p>
+					<div class="imagebox"> 
+						<a href="img/Tracy_sample_Resume.pdf">
+							<img src="img/resume.png" alt="screenshot of part of my sample resume"></a>
+					</div>
+		</div>
+		
+		<div id="block2">
+			<div class="imagebox">
+				<img src="img/TracyLyon.png" alt="my picture">
+			</div>
+		</div>
+	
+		<div id="block3">
+		
+			<h2>Questions?</h2>
+			<p> Please feel free to reach out to me at</p> <address>
+				<a href="mailto:Tracy.Lyon@wsu.edu">  Tracy.Lyon@WSU.edu</a>
+				<br>
+				</address><p> if you have any questions.</p><br>
+				
+		</div>
+		
+	
+	</div> <!--closes main body of page-->
+	<footer>
+		last updated: <time datetime="2018-12-07">December 7, 2018</time></footer>
+</div> <!--closes wrapper-->
+
+<script>
+	// reveal nav
+	document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+    // close nav
+	document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+	let navBar = document.querySelector("nav");
+	let hamIcon = document.querySelector("#ham-icon");
+
+	function displayNav() {
+       navBar.style.display = "block";
+       hamIcon.style.display = "none";
+	 }
+
+	function hideNav() {
+       navBar.style.display = "none";
+       hamIcon.style.display = "block";
+	 }
+
+
+
+</script>
+
+</body>
+</html>
