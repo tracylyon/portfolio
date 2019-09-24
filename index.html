@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -16,14 +15,15 @@
 <div id="wrapper">
 
     <header> 
-				
+
 		<div id="hero">
-	
-		<h1>Tracy L Lyon</h1>
-		<span> Web Development - Usability - Content Development</span>
-		
+		<h1 class="h1text">
+		Tracy L Lyon</h1>
+
+		<div id="tagline"> Web Development - Usability - Content Development</div>
+			</div>
 		</div>
-	<!-- nav bar
+	<!-- nav bar -->
 		
 			<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
 			<nav>
@@ -38,35 +38,48 @@
 				</ul>
 	
 			<a href="#" class="menu-icon" id="close-icon">X</a>
-			</nav> -->
+			</nav>
 	</header>
 	<div id="main">
-	
-		<div id="block1"><p> this is a place </p>
+	<!--	<div id="block1">
+		<h2> Who am I? </h2>
+		<p>My name is Tracy Lyon. I will soon be graduating with my Bachelors of Arts degree from Washington State University, Vancouver with a major in Digital Technology and Culture. I have learned much about programming in various languages and environments, as well as how to best integrate technology and culture graphically through computer science and how to write professionally. With the coursework from WSU as well as my prior life and work experience, I feel confident that I can step into a new position and begin working with the cutting-edge technology produced at your company.</p> 
+		</div>
 		
+	<div id="block2">
+		<div class="imagebox">
+			<img src="img/TracyLLyonatWSUV.png" alt="my picture">
 			</div>
-		
-		<div id="block2">
-				<p> block 2 </p>
-			</div>
+	</div>
 		
 	
 		<div id="block3">
-			<p> block 3 </p>
-			</div>
+			<h2>My Education</h2>
+			<ul>
+				<li> WSU Vancouver: DTC Major, CS Minor </li>
+				<li> City University of Seattle: Education Major</li>
+				<li> Solano Community College: Liberal Studies </li>
+			</ul>
+		</div>
 	
 		<div id="block4">
-			<p> block 4 </p>
-			
-			</div>
+			<h2>Work/Volunteer </h2>
+			<ul>
+				<li> Alorica advanced technical support for AT&T Spokane, WA 10/14-08/15</li>
+				<li> Crossroads Church preschool lead teacher, Vancouver, WA 9/16 to present </li>
+				<li> College Access Program volunteer, Vancouver, WA 9/18 to present </li>
+		
+			</ul>  
+		</div>
+	-->
 	
 	</div> <!--closes main body of page-->
-<footer>
-		last updated: <time datetime="2018-12-07">December 7, 2018</time>
-</footer>
+
 
 </div> <!--closes wrapper-->
-
+<footer>
+		last updated: <p> <span id="datetime"></span></p>
+</footer>
 <script>
 	// reveal nav
 	document.querySelector("#ham-icon").addEventListener("click", displayNav);
@@ -86,6 +99,9 @@
        navBar.style.display = "none";
        hamIcon.style.display = "block";
 	 }
+
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
 
 
 

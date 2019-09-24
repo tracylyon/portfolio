@@ -34,47 +34,64 @@
 	
 	/* end reset*/
 	
-/*	Color scheme "hero unit"
-
-	#A63C63 rose pink
-	#261D26 dark gray
-	#182609 dark green
-	#405919 army green
-	#A6A29C light gray
-	*/
+/*	Color scheme "hero image"/* Color Theme Swatches in Hex 
+.newheroscheme-1-hex { color: #2C1412; } brown
+.newheroscheme-2-hex { color: #D5D9E6; } light gray
+.newheroscheme-3-hex { color: #000000; }black
+.newheroscheme-4-hex { color: #38090D; } burgundy
+.newheroscheme-5-hex { color: #8EA1B5; } blue gray
+ */
 	
 	
 	
 	/* Portfolio default styles*/
 	
 	body {
-		font-family: 'Playfair Display', Book Antiqua, serif;
-		font-size: 18px;
+		font-family: 'Playfair Display', serif;
+		font-size: 1em;
 		color: white;
-		background:#A6A29C;
+		background: #D5D9E6;
 		padding: 1%;
 		
 		}
-
-	
 	#hero {
-		
+
 		font-family: 'Playfair Display', Book Antiqua, serif;
-		font-size: 18px;
+		font-size: 24px;
 		color: white;
-		background-image: url("img/TracyLLyon.png");
+		background-image: url("img/TracyLLyonatWSUV.png" );
 		background-size: cover;
-		padding: 1%;
-		width: 100%;
-		text-align: left;
-		height: 800px;
+		background-position: right;
 		
-	
+		width: 100%;
+		
+		height: 1000px;
+		color: #A63C63;
+
 	}	
+	h1.h1text {
+		text-align: left;
+		position: relative;
+		top: 86%;
+		color: black;
+		background-color: #8EA1B5;
+
+	}
+	#tagline {
+		position: relative;
+		top: 86%;
+		color: black;
+		font-style: italic;
+		font-weight: bold;
+		text-align: left;
+		background-color: #8EA1B5;
+		
+	}
+		
 	#wrapper {
-			width: 90%;
+			width: 100%;
 			margin:2% auto;
-			background: #261D26;
+			
 
 						
 		}
@@ -82,19 +99,18 @@
 	header {
 		font-family: 'Acme', sans-serif;
 		font-size: 1.5em;
-		padding: 1%;
+		
 		margin: auto;
 		color: white;
-		background: #A6A29C;
 		text-align: center;
 		
 		}
 	#main {
 		width: 100%;
 		margin:  auto;
-		background:#A63C63;
+		
 		padding: 3%;
-		border: 2px solid #261D26;
+		
 	}
 		#block1 {
 			display: block;
@@ -134,18 +150,17 @@
 		}
 		
 	h1  {
-		font-family: 'Arimo', sans-serif;
+		font-family: 'Playfair Display', Book Antiqua, serif;
 		font-size: 3em;
 		font-weight: bold;
-		color: white;		
-		
+		color: white;	
 		}
 		
 		
 		
 	h2 {
 		font-family: 'Arimo', sans-serif;
-		font-size: 2em;
+		font-size: 1.5em;
 		font-weight: bold;
 		color: white;
 		text-align: center;
@@ -169,10 +184,10 @@
 	}
 	
 	a:link {
-		color: #A63C63;
+		color: white;
 	}
 	a:visited {
-		color: #405919;
+		color: #38090D;
 	}
 		
 	nav {
@@ -202,7 +217,7 @@
     }
 
     a.menu-icon:hover, a.menu-icon:focus {
-       color: #DBB91A;
+       color: #38090D;
     }
 
 	nav ul {
@@ -229,19 +244,20 @@
 	
 	nav li a:link, nav li a:visited  {
 			color: white;
-			background: #090F28;
+			background: #000000;
 			
 		}
 	
 	nav li a:hover, nav li a:focus {
-			color: #000;
-			background: #8F95BF;
+			font-size: 2em;
+			background: #38090D;
 			
 		}
 		
 	footer {
-		font-size: .5em;
+		font-size: .75em;
 		text-align: center;
+		color: black;
 	}
 	
 	/* tablet styles */
@@ -339,4 +355,5 @@
 		}
 		
 	}
+
 
